@@ -1,22 +1,19 @@
-/*
--->Criar dois vetores A e B cada um com 10 elementos inteiros.
--->Construir um vetor C, onde cada elemento de C é a divisão dos respectivos
-   elementos em A e B, ou seja,
-   C[i] = A[i] / B[i]
-
- */
-
 import java.util.Scanner;
 
-public class Ex09 {
+/*
+-->Criar um vetor A com 10 elementos inteiros.
+-->Construir um vetor B de mesmo tipo e tamanho, sendo que cada elemento do vetor B deverá
+ser o resto da divisão do respectivos elemento de A por 2, ou seja,
+ B[i] = A[i] % 2
 
+*/
+public class Ex10 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
         int[] vetorA = new int[10];
         int[] vetorB = new int[10];
-        double[] vetorC = new double[2];
 
         for (int i = 0; i < vetorA.length; i++) {
             System.out.println("Entre com o valor do vetor A da posicao: " + i);
@@ -26,10 +23,8 @@ public class Ex09 {
         for (int i = 0; i < vetorB.length; i++) {
             System.out.println("Entre com o valor do vetor B da posicao: " + i);
             vetorB[i] = sc.nextInt();
-        }
 
-        for (int i = 0; i < vetorC.length; i++) {
-            vetorC[i] = vetorA[i] / vetorB[i];
+            vetorB[i] = vetorA[i] % 2;
         }
 
         System.out.println("Vetor A");
@@ -42,10 +37,5 @@ public class Ex09 {
             System.out.println(vetorB[i]);
         }
 
-        System.out.println("Vetor C");
-        for (int i = 0; i < vetorC.length; i++) {
-            System.out.println(vetorC[i]);
-        }
     }
-
 }

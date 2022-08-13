@@ -19,7 +19,6 @@ public class Ex06 {
         int[] vetorB = new int[vetorA.length];
         int[] vetorC = new int[vetorA.length];
 
-
         for (int i = 0; i < vetorA.length; i++) {
             System.out.println("Entre com o valor do vetor A da posicao: " + i);
             vetorA[i] = sc.nextInt();
@@ -28,6 +27,10 @@ public class Ex06 {
         for (int i = 0; i < vetorB.length; i++) {
             System.out.println("Entre com o valor do vetor B da posicao: " + i);
             vetorB[i] = sc.nextInt();
+        }
+
+        for (int i = 0; i < vetorA.length; i++) {
+            vetorC[i] = vetorA[i] + vetorB[i];
         }
 
         System.out.println("Vetor A = ");

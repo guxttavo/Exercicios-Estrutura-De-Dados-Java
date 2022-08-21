@@ -4,7 +4,6 @@
    -A quantidade de elementos armazenados no vetor que são iguais a 15.
    -A soma dos elementos armazenados neste vator que são inferiores a 15.
    -A média dos elementos armazendos no vetor que são superiores a 15.
-
  */
 
 
